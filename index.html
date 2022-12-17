@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seloctorlar</title>
+	<style type="text/css">
+		.main{
+			display: flex;
+		}
+		.block-1{
+			width: 300px;
+			height: 300px;
+			margin: 1px;
+			border: 3px solid red;
+			position: relative;
+		}
+		.block-1::before{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			transition: all .4s;
+		}
+		.block-1::after{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			transition: all .4s;
+		}
+		.block-1:hover::before{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+			transform: rotate(90deg);
+		}
+		.block-1:hover::after{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+			transform: rotate(90deg);
+		}
+		.block-1 img{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 120px;
+			left: 120px;
+			transition: all .4s;
+		}
+		.block-1:hover img{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+		}
+
+		.block-2{
+			width: 300px;
+			height: 300px;
+			margin: 1px;
+			border: 3px solid blue;
+			position: relative;
+		}
+		.block-2::before{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			transition: all .4s;
+		}
+		.block-2::after{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			transition: all .4s;
+		}
+		.block-2:hover::before{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+		}
+		.block-2:hover::after{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+		}
+		.block-2 img{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 120px;
+			left: 120px;
+			transition: all .5s;
+		}
+		.block-2:hover img{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+			transform: rotate(720deg);
+		}
+		.block-3{
+			width: 300px;
+			height: 300px;
+			margin: 1px;
+			border: 3px solid green;
+			position: relative;
+		}
+		.block-3::before{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			transition: all .4s;
+		}
+		.block-3::after{
+			content: '';
+			width: 50px;
+			height: 50px;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			transition: all .4s;
+		}
+		.block-3 img{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 120px;
+			left: 120px;
+			transition: all .5s;
+			opacity: 0;
+		}
+		.block-3:hover img{
+			width: 80px;
+			height: 80px;
+			top: 115px;
+			left: 115px;
+			opacity: 1;
+		}
+		.block-3:hover::before{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+			transform: rotate(720deg);
+		}
+		.block-3:hover::after{
+			width: 80px;
+			height: 80px;
+			top: 110px;
+			left: 110px;
+			transform: rotate(720deg);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		 <div class="block-1">
+		 	<img src="images.jpg">
+		 </div>
+		 <div class="block-2">
+		 	<img src="Без названия (1).jpg">
+		 </div>
+		 <div class="block-3">
+		 	<img src="Screenshot_20221030-200626.jpg">
+		 </div>
+	</div>
+
+</body>
+</html>
